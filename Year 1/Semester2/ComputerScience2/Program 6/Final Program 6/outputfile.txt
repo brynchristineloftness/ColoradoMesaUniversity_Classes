@@ -1,0 +1,32 @@
+Bubble Sort  N = 10000
+   -49993.664   -31432.150   -21581.700   -13104.768    -5538.947
+      126.164     5987.604    13280.791    21525.968    31480.465
+
+Number of Compares = 99980001  Number of Moves = 74909664
+Relative # of Compares = 9998.0001  Relative # of Moves = 7490.9664
+
+
+Selection Sort  N = 10000
+   -49993.664   -31432.150   -21581.700   -13104.768    -5538.947
+      126.164     5987.604    13280.791    21525.968    31480.465
+
+Number of Compares = 49995000  Number of Moves = 29997
+Relative # of Compares = 4999.5000  Relative # of Moves = 2.9997
+
+
+Insert Sort  N = 10000
+   -49993.664   -31432.150   -21581.700   -13104.768    -5538.947
+      126.164     5987.604    13280.791    21525.968    31480.465
+
+Number of Compares = 24979887  Number of Moves = 24999885
+Relative # of Compares = 2497.9887  Relative # of Moves = 2499.9885
+
+
+Quick Sort  N = 10000
+   -49993.664   -31432.150   -21581.700   -13104.768    -5538.947
+      126.164     5987.604    13280.791    21525.968    31480.465
+
+Number of Compares = 218569  Number of Moves = 93681
+Relative # of Compares = 21.8569  Relative # of Moves = 9.3681
+
+

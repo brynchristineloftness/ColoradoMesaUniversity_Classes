@@ -1,0 +1,13 @@
+integer j = 3 and integer t = 5.
+Inititating Swapme Function
+integer j = 5 and integer t = 3.
+
+string name1 = John and string name2 = Jane.
+Inititating Swapme Function
+string name1 = Jane and string name2 = John.
+
+firststruct.x = 1234 and firststruct.y = Link.
+secondstruct.x = 9894 and secondstruct.y = Zelda.
+Inititating Swapme Function
+firststruct.x = 9894 and firststruct.y = Zelda.
+secondstruct.x = 1234 and secondstruct.y = Link.

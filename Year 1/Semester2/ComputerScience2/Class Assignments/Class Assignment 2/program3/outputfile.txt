@@ -1,0 +1,9 @@
+Number of elements in queue: 6
+Elements in queue: 
+Geography    245
+English      310
+Geophysics   782
+Mathematics  335
+Sociology    902
+Art          522
+

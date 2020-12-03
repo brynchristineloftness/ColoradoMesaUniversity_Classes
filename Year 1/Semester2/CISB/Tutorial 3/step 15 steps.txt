@@ -1,0 +1,18 @@
+1. remove worksheet protection from the registration data worksheet
+	how to:
+2. make the receipt worksheet the active worksheet
+	how to: click on receipt tab
+3. select A40:F40 and copy it to the clipboard
+	
+4. go to registration data worksheet
+5. Click cell A1, and then press Control + (downarrow) key to go to last row with values
+6.On the developer tab, code group, use relative references button
+7. move down one row
+8.developer tab, code group, use relative references button
+9.paste the values you coped in the registration data worksheet
+10. click cell a1
+11.turn on worksheet protection for the registration data worksheet
+12. go to receipt worksheet and make cell B3 the active cell
+
+	
+

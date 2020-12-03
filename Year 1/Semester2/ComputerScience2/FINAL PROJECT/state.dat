@@ -1,0 +1,6 @@
+ReservedWord	Integer		NewToken	Delimiter	NewToken	NewToken	NewToken	NewToken
+ReservedWord	Variable	NewToken	Delimiter	NewToken	NewToken	NewToken	NewToken
+Variable		Variable	NewToken	Delimiter	NewToken	NewToken	NewToken	NewToken
+ReservedWord	Integer		Real		Delimiter	NewToken   	NewToken	NewToken	NewToken
+ReservedWord	Real		NewToken	Delimter	NewToken	NewToken	NewToken	NewToken
+ReservedWord	Integer		NewToken	NewToken	NewToken	NewToken	NewToken	NewToken

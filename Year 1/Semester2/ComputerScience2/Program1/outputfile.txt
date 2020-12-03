@@ -1,0 +1,48 @@
+                     City High School - Mathematics Department
+  CRN        Course      Credit Hrs     Stu. Count    Professor   Sum Credit Hrs
+--------------------------------------------------------------------------------
+ 12836       Algebra          4            40         Boole           160
+ 21780       Trigonometry     3            33         Euler            99
+ 52266       Algebra          4            44         Hughes          176
+ 35628       Precalculus      5            27         Jones           135
+ 41805       Geometry         5            35         Pyth            175
+ 11434       Algebra          4            27         Boole           108
+ 66886       Trigonometry     3            18         Patton           54
+ 78799       Calculus         5            24         Newton          120
+ 22531       Geometry         3            11         DesCartes        33
+ 61443       Algebra          4            35         Pascal          140
+ 89984       Calculus         5            10         Leibniz          50
+--------------------------------------------------------------------------------
+           Totals:           45           304                        1250
+
+                     City High School - Mathematics Department
+  CRN        Course      Credit Hrs     Stu. Count    Professor   Sum Credit Hrs
+--------------------------------------------------------------------------------
+ 22531       Geometry         3            11         DesCartes        33
+ 89984       Calculus         5            10         Leibniz          50
+ 66886       Trigonometry     3            18         Patton           54
+ 21780       Trigonometry     3            33         Euler            99
+ 11434       Algebra          4            27         Boole           108
+ 78799       Calculus         5            24         Newton          120
+ 35628       Precalculus      5            27         Jones           135
+ 61443       Algebra          4            35         Pascal          140
+ 12836       Algebra          4            40         Boole           160
+ 41805       Geometry         5            35         Pyth            175
+ 52266       Algebra          4            44         Hughes          176
+--------------------------------------------------------------------------------
+           Totals:           45           304                        1250
+
+
+The average number of students in each section within the Math Department is 27.
+
+
+City High School - Mathematics Department
+  Number of Students by Course Subject
+ Course                 Num of Students
+----------------------------------------
+ Trigonometry                        51
+ Precalculus                         27
+ Geometry                            46
+ Calculus                            34
+ Algebra                            146
+----------------------------------------

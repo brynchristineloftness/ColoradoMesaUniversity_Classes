@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
+
+
+struct listtype {
+string last;
+string first;
+int id; };

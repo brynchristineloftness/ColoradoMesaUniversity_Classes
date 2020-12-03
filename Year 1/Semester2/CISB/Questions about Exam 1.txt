@@ -1,0 +1,20 @@
+Question 17 - When you click in each cell in the Total row, a(n) ____ appears that you can click to open a list of the most commonly used functions.
+My guess - button
+their answer - arrow
+
+Question 19 - When you create a new workbook from a template, an unnamed copy of the template opens
+My guess - false
+their answer - true
+
+Question 26 - Which of the following statements about hyperlinks in excel workbooks is correct
+My guess - they are usually represented by bold faced words with underlines or images
+their answer - They can be used to jump to a specific cell or range within the active worksheet, another worksheet, or another workbook.
+
+Question 31 - When the source and destination workbooks are stored in the same folder, you still need to include the location information in the workbook reference that links the two files.
+My guess - true
+their answer - false
+
+Question 36 - If a worksheet group includes all the worksheets in a workbook, you can edit only the active worksheet.
+My guess - false
+their answer - true
+

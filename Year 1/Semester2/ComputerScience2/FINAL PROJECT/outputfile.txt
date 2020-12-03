@@ -1,0 +1,164 @@
+     Reserved Words Table
+and
+end
+for
+goto
+if
+input
+next
+or
+print
+read
+rem
+step
+then
+to
+
+
+
+       Prog1.bas Table
+10 rem
+12 input x1,y
+13 if x1<y then goto 15
+14 zee = x1-y
+11 goto 16
+15 zee = x1+2*y
+16 print x1,y,zee
+17 for i = 1 to 16 step 5
+18 print i
+19 next i
+20 input st%
+21 print "$", st%
+22 input x
+23 if y >= x1 then x = y^3
+24 print x1,#
+25 end
+
+
+
+                                      Action Table
+             Letter   Digit    Period   Delimiter Blank    Pod      EOLN     Illegal  
+NewToken        1        1        5        1        6        5        6        7        
+ReservedWord    1        1        4        8        2        10       2        11       
+Variable        1        1        4        9        3        12       3        13       
+Integer         9        1        1        9        3        4        3        13       
+Real            9        1        4        9        3        4        3        13       
+Delimiter       9        9        4        12       3        4        3        13       
+
+
+
+                         Explanations Table
+1 Load character and continue
+2 Compare with table of reserved words, print token, reinitialize token
+3 Print token, reinitialize token
+4 Print token, write "Improper usage", print character, reinitialize token
+5 Write "Improper usage", print character
+6 Continue
+7 Write "Illegal character", print character
+8 Compare with table of reserved words, print token, reinitialize token, load char
+9 Print token, reinitialize token, load character
+10 Load character, change state to variable, print token, reinitialize token
+11 Compare with table of reserved words, print token, write "Illegal character", print char
+12 Load character, print token, reinitialize token
+13 Print Token, write "Illegal Character", print character, reinitialize token
+
+
+
+
+                                                      State Table
+            |Letter      |Digit       |Period      |Delimiter   |Blank       |Pod         |EOLN        |Illegal     
+-------------------------------------------------------------------------------------------------------------------- 
+NewToken    |ReservedWord|Integer     |NewToken    |Delimiter   |NewToken    |NewToken    |NewToken    |NewToken    |
+ReservedWord|ReservedWord|Variable    |NewToken    |Delimiter   |NewToken    |NewToken    |NewToken    |NewToken    |
+Variable    |Variable    |Variable    |NewToken    |Delimiter   |NewToken    |NewToken    |NewToken    |NewToken    |
+Integer     |ReservedWord|Integer     |Real        |Delimiter   |NewToken    |NewToken    |NewToken    |NewToken    |
+Real        |ReservedWord|Real        |NewToken    |Not Valid   |NewToken    |NewToken    |NewToken    |NewToken    |
+Delimiter   |ReservedWord|Integer     |NewToken    |NewToken    |NewToken    |NewToken    |NewToken    |NewToken    |
+
+
+           SCANNER RESULTS:
+Error?           TOKEN     TOKEN-TYPE
+                    10        Integer
+                   rem   ReservedWord
+                    12        Integer
+                 input   ReservedWord
+                    x1       Variable
+                     ,      Delimiter
+                     y       Variable
+                    13        Integer
+                    if   ReservedWord
+                    x1       Variable
+                     <      Delimiter
+                     y       Variable
+                  then   ReservedWord
+                  goto   ReservedWord
+                    15        Integer
+                    14        Integer
+                   zee       Variable
+                     =      Delimiter
+                    x1       Variable
+                     -      Delimiter
+                     y       Variable
+                    11        Integer
+                  goto   ReservedWord
+                    16        Integer
+                    15        Integer
+                   zee       Variable
+                     =      Delimiter
+                    x1       Variable
+                     +      Delimiter
+                     2        Integer
+                     *      Delimiter
+                     y       Variable
+                    16        Integer
+                 print   ReservedWord
+                    x1       Variable
+                     ,      Delimiter
+                     y       Variable
+                     ,      Delimiter
+                   zee       Variable
+                    17        Integer
+                   for   ReservedWord
+                     i       Variable
+                     =      Delimiter
+                     1        Integer
+                    to   ReservedWord
+                    16        Integer
+                  step   ReservedWord
+                     5        Integer
+                    18        Integer
+                 print   ReservedWord
+                     i       Variable
+                    19        Integer
+                  next   ReservedWord
+                     i       Variable
+                    20        Integer
+                 input   ReservedWord
+                   st%       Variable
+                    21        Integer
+                 print   ReservedWord
+                     "      Delimiter
+Improper Usage:      $
+                    ",      Delimiter
+                   st%       Variable
+                    22        Integer
+                 input   ReservedWord
+                     x       Variable
+                    23        Integer
+                    if   ReservedWord
+                     y       Variable
+                    >=      Delimiter
+                    x1       Variable
+                  then   ReservedWord
+                     x       Variable
+                     =      Delimiter
+                     y       Variable
+                     ^      Delimiter
+                     3        Integer
+                    24        Integer
+                 print   ReservedWord
+                    x1       Variable
+                     ,      Delimiter
+Illegal Character:   #
+                    25        Integer
+                   end   ReservedWord

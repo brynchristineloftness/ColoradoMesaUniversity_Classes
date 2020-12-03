@@ -1,0 +1,85 @@
+1/16/2018 Notes
+Questions:
+Bubble Sort?
+Sort Routines?
+Classes?
+
+General Notes:
+Thursday - Review Program Assignment
+We are meeting this Friday and next
+Program assigned every 1.5 weeks
+Look up CMU Student Coding Showcase
+Ask for last semesters programs from Matt(?)
+
+Course Notes:
+Abstraction - work on problems a step at a time
+	ex. top down programming - list the most basic overall steps that need to be done
+	ex. Stepwise refinement - take one step, break it down until you can do it
+Algorithm - a series of steps to solve a problem
+Software Life Cycle :
+1. Understand/Clarify Problems and Specifications
+2. Create the Algorithm (Framework)
+3. Code the Program
+4. Testing
+5. Maintanence 
+
+
+Questions Elaborated:
+
+Sort Routines/Algorithms:
+Algorithm that puts elements of a list in a certain order. 
+Most used are numerical and alphabetical
+Examples of such are Selection, Bubble, Insertion, Merge, Heap, Quick, Radix, Counting, Bucket, Shell
+
+Bubble Sort: Simplest sorting algorithm. 
+Sorts elements to be in a specific order (Numerical)
+Copied from geeksforgeeks.org " 
+	void swap(int *xp, int *yp)
+	{
+	    int temp = *xp;
+	    *xp = *yp;
+	    *yp = temp;
+	}
+	 
+	// A function to implement bubble sort
+	void bubbleSort(int arr[], int n)
+	{
+	   int i, j;
+	   for (i = 0; i < n-1; i++)      
+	 
+	       // Last i elements are already in place   
+	       for (j = 0; j < n-i-1; j++) 
+	           if (arr[j] > arr[j+1])
+	              swap(&arr[j], &arr[j+1]);
+	}
+	 
+	/* Function to print an array */
+	void printArray(int arr[], int size)
+	{
+	    int i;
+	    for (i=0; i < size; i++)
+	        printf("%d ", arr[i]);
+	    printf("n");
+	}
+	 
+	// Driver program to test above functions
+	int main()
+	{
+	    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+	    int n = sizeof(arr)/sizeof(arr[0]);
+	    bubbleSort(arr, n);
+	    printf("Sorted array: \n");
+	    printArray(arr, n);
+	    return 0;
+	}
+"
+
+Classes:
+Kinda like struct.
+class Car, the data member will be speed limit, mileage and member functions can be apply brakes, increase speed
+
+class ClassName
+{ Access specifier: //can be private, public, or protected
+Data members; //variables to be used
+Member functions() {} // Methods to access data members
+}; //Class name ends with a semicolon
